@@ -10,7 +10,6 @@ const assertEqual = function(actual, expected) {
 const countLetters = function(itemsToCount) {
   const noSpaces = itemsToCount.replace(/ /g, '').toLowerCase();
   
-  console.log(noSpaces)
   const resultObject = {};
   for (let letter of noSpaces) {
     resultObject[letter] = 0;
