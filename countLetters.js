@@ -14,6 +14,7 @@ const countLetters = function(itemsToCount) {
   const resultObject = {};
   for (let letter of noSpaces) {
     resultObject[letter] = 0;
+    console.log(resultObject)
     for (let checkLetter of noSpaces) {
       if (checkLetter === letter) {
         resultObject[letter] += 1;

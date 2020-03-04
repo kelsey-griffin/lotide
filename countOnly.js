@@ -11,7 +11,15 @@ const assertEqual = function(actual, expected) {
 // itemsToCount: an object specifying what to count
 const countOnly = function(allItems, itemsToCount) {
   const resultObject = {}
-  for (let nameToCount of Object.keys(itemsToCount)) {
+  const keyList = []
+  
+  for (myKey in itemsToCount) {
+    if (itemsToCount[myKey]) {
+      keyList.push(myKey)
+    }
+  }
+  
+  for (let nameToCount of keyList) {
     resultObject[nameToCount] = 0;
     for (let name of allItems) {
       if (name === nameToCount) {
