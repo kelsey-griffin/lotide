@@ -26,9 +26,25 @@ const flatten = function(nestedArrays) {
       for (let inner = 0; inner < nestedArrays[outer].length; inner++) {
         flat.push(nestedArrays[outer][inner])
       }
-    } else flat.push(nestedArrays[outer])
+    } else {
+      flat.push(nestedArrays[outer])
+    }
   }
   return flat
 };
+
+// const flatten = function(array) {
+//   return array.reduce(function(acc, curr) {
+//     if (Array.isArray(curr)) {
+//       let vals = []
+//       for (let inner = 0; inner < curr.length; inner++) {
+//         vals.push(curr[inner])
+//       }
+//       return acc.concat(vals)
+//     }
+
+//     return acc.concat([curr])
+//   }, [])
+// }
 
 assertArraysEqual([1, [3, 5, 8], 4], [1, 3, 5, 8, 4]);
