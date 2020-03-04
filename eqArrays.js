@@ -9,16 +9,17 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) return false;
+  if (arr1.length !== arr2.length){ 
+    return false;
+  }
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 };
 
 // TEST CODE
 console.log(assertEqual(eqArrays([1, 3], [4, 2]), false));
-console.log(assertEqual(eqArrays([1, 3, 4], [1, 3, 4, 5]), false));
+console.log(assertEqual(eqArrays([1, 3, "4"], [1, 3, 4]), false));
