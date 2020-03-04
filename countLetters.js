@@ -14,7 +14,6 @@ const countLetters = function(itemsToCount) {
   const resultObject = {};
   for (let letter of noSpaces) {
     resultObject[letter] = 0;
-    console.log(resultObject)
     for (let checkLetter of noSpaces) {
       if (checkLetter === letter) {
         resultObject[letter] += 1;
@@ -29,4 +28,4 @@ const countLetters = function(itemsToCount) {
 };
 
 const sentence = "Lighthouse in the house"
-console.log(countLetters(sentence))
+assertEqual(countLetters(sentence).t, 2)
