@@ -1,12 +1,3 @@
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑 Assertion failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`✅ Assertion passed: ${actual} === ${expected}`);
-
-  }
-};
-
 // const restaurants = {
 //   "Blue Hill": { stars: 1 },
 //   "Akaleri":   { stars: 3 },
