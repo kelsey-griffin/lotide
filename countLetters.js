@@ -26,5 +26,6 @@ const countLetters = function(itemsToCount) {
   return resultObject;
 };
 
+module.exports = countLetters;
 // const sentence = "Lighthouse in the house"
 // assertEqual(countLetters(sentence).t, 2)

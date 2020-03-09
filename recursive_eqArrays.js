@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const eqArrays = function(arr1, arr2) {
+const recursive_eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -23,4 +23,5 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
+module.exports = recursive_eqArrays;
 // assertEqual(eqArrays([[2],[[4, 3]], 3], [[2],[[4, 3]], 3]), true);

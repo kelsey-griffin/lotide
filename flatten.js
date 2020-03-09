@@ -33,6 +33,7 @@ const flatten = function(nestedArrays) {
   return flat
 };
 
+module.exports = flatten;
 // const flatten = function(array) {
 //   return array.reduce(function(acc, curr) {
 //     if (Array.isArray(curr)) {

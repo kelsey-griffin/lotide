@@ -19,7 +19,7 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-const eqObjects = function(objA, objB) {
+const recursive_eqObjects = function(objA, objB) {
   let aProps = Object.getOwnPropertyNames(objA);
   let bProps = Object.getOwnPropertyNames(objB);
 
@@ -41,6 +41,7 @@ const eqObjects = function(objA, objB) {
   }
   return true;
 }
+module.exports = recursive_eqObjects;
 // assertEqual(eqObjects({ a: { z: 1, b: 1 }, b: 2 }, { a: { z: 1 , b: 1}, b: 2 }), true) 
 
 // eqObjects({ a: { y: 0, z: 1 }, b: 2 }, { a: { z: 1 }, b: 2 }) // => false

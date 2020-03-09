@@ -22,5 +22,5 @@ const findKey = function(object, callback) {
   }
 };
 
-
+module.exports = findKey;
 // assertEqual(findKey(restaurants, x => x.stars === 2), "noma");

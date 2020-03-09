@@ -30,6 +30,7 @@ const without = function(array, toRemove) {
   return newArray;
 };
 
+module.exports = without;
 // // TEST CODE
 // const words = ["hello", "world", "lighthouse"];
 // without(["hello", "world", "lighthouse"], ["lighthouse"]); 
