@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@kelsey.griffin/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practice Lodash for Lighthouse Labs ",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/kelsey-griffin/lotide.git"
   },
-  "author": "",
+  "author": "Kelsey Griffin",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kelsey-griffin/lotide/issues"
