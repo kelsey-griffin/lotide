@@ -40,4 +40,4 @@ const assertObjectsEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion failed: ${inspect(actual)} !== ${inspect(expected)}`);
   }
 };
-assertObjectsEqual({a: 1, b: 2}, {a: 1, b: 2})
+// assertObjectsEqual({a: 1, b: 2}, {a: 1, b: 2})

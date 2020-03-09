@@ -47,4 +47,4 @@ const flatten = function(nestedArrays) {
 //   }, [])
 // }
 
-assertArraysEqual([1, [3, 5, 8], 4], [1, 3, 5, 8, 4]);
+// assertArraysEqual([1, [3, 5, 8], 4], [1, 3, 5, 8, 4]);

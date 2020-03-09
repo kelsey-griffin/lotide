@@ -30,7 +30,7 @@ const without = function(array, toRemove) {
   return newArray;
 };
 
-// TEST CODE
-const words = ["hello", "world", "lighthouse"];
-without(["hello", "world", "lighthouse"], ["lighthouse"]); 
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+// // TEST CODE
+// const words = ["hello", "world", "lighthouse"];
+// without(["hello", "world", "lighthouse"], ["lighthouse"]); 
+// assertArraysEqual(words, ["hello", "world", "lighthouse"]);

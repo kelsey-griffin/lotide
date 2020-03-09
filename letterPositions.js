@@ -31,4 +31,4 @@ const letterPositions = function(sentence) {
   return resultObject;
 };
 
-assertArraysEqual(letterPositions("this was so hard").s, [3, 7, 9])
+// assertArraysEqual(letterPositions("this was so hard").s, [3, 7, 9])
